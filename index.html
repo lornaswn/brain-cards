@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>脑宇宙 · 版本总入口</title>
+<style>
+  :root{--brand:#FF7A59;--brand2:#7C6CF0;--ink:#2B2438;--muted:#9389A3;}
+  *{box-sizing:border-box;margin:0;}
+  body{font-family:"PingFang SC","Microsoft YaHei",system-ui,sans-serif;color:var(--ink);
+    background:radial-gradient(120% 60% at 50% -10%,#FFE6D8 0%,rgba(255,230,216,0) 60%),linear-gradient(180deg,#FFF7F1,#FDEFE8);
+    min-height:100vh;}
+  .wrap{max-width:480px;margin:0 auto;padding:26px 18px 60px;}
+  .head{text-align:center;padding:18px 0 6px;}
+  .logo{display:inline-flex;align-items:center;gap:10px;font-weight:900;font-size:24px;}
+  .logo .mark{width:38px;height:38px;border-radius:11px;display:flex;align-items:center;justify-content:center;
+    background:linear-gradient(135deg,var(--brand),var(--brand2));font-size:20px;box-shadow:0 6px 14px rgba(255,122,89,.3);}
+  .logo b{color:var(--brand);}
+  .sub{color:var(--muted);font-size:13px;margin-top:8px;line-height:1.6;}
+  .title{font-size:15px;font-weight:800;margin:24px 4px 12px;color:var(--ink);}
+  .vcard{display:block;text-decoration:none;color:inherit;background:#fff;border-radius:20px;padding:18px;
+    box-shadow:0 8px 24px rgba(120,70,40,.10);margin-bottom:14px;position:relative;overflow:hidden;transition:transform .15s;}
+  .vcard:active{transform:scale(.98);}
+  .vcard .vtag{position:absolute;right:14px;top:14px;font-size:11px;font-weight:800;color:#fff;padding:4px 11px;border-radius:999px;}
+  .vcard.v1 .vtag{background:linear-gradient(135deg,#8FA6FF,#6F8BFF);}
+  .vcard.v2 .vtag{background:linear-gradient(135deg,var(--brand),var(--brand2));}
+  .vcard h2{font-size:20px;margin-bottom:6px;}
+  .vcard p{font-size:13px;color:var(--muted);line-height:1.65;}
+  .vcard .go{display:inline-flex;align-items:center;gap:6px;margin-top:12px;font-size:14px;font-weight:800;color:var(--brand2);}
+  .vcard.v2 .go{color:var(--brand);}
+  .vcard .feat{font-size:12px;color:#6b7886;margin-top:10px;line-height:1.6;}
+  .note{font-size:11.5px;color:var(--muted);text-align:center;margin-top:18px;line-height:1.7;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="head">
+    <div class="logo"><span class="mark">🧠</span>脑宇宙<b>· 版本总入口</b></div>
+    <div class="sub">同一套脑科学育儿卡牌的两个版本<br>点开任意一版即可体验，两版相互独立、互不覆盖</div>
+  </div>
+
+  <div class="title">选择版本</div>
+
+  <a class="vcard v1" href="versions/v1/">
+    <span class="vtag">V1 · 经典版</span>
+    <h2>🐱 铲屎官 V1（已冻结）</h2>
+    <p>你最初确认的结构：图片 → 照顾需求 → 工具 → 猫猫情绪(含情绪应对) → 心情 → 段位榜。</p>
+    <div class="feat">17 脑区卡 · 每日一抽 · 情境断案(付费分层) · 铲屎官养成</div>
+    <span class="go">进入 V1 经典版 ›</span>
+  </a>
+
+  <a class="vcard v2" href="parent-app/">
+    <span class="vtag">V2 · 全新版</span>
+    <h2>🚀 脑宇宙家长版 V2（推荐）</h2>
+    <p>全新 App 化设计（底部 Tab 导航），温暖专业可爱基调，并补齐引流闭环。</p>
+    <div class="feat">首页/脑区/断案/铲屎官/我的 五大模块 · 扫码深链落地 · 加群私域 · 分享海报 · 脑区测评报告 · 新手引导 · 会员体系</div>
+    <span class="go">进入 V2 全新版 ›</span>
+  </a>
+
+  <div class="note">V1 与 V2 各自独立存档，后续对 V2 的改动不会影响 V1。<br>当前为沙箱内网预览，正式推广请部署到真实域名。</div>
+</div>
+</body>
+</html>
